@@ -1,1 +1,66 @@
-https://seu-usuario.github.io/cronograma-gestao-ti/
+
+
+`html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cronograma Gestão de TI</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 20px; }
+    header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
+    section { background: white; margin: 20px 0; padding: 20px; border-radius: 8px; }
+    h2 { color: #34495e; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 12px; }
+    button { background: #27ae60; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; }
+    button.done { background: #95a5a6; text-decoration: line-through; }
+    a { color: #2980b9; text-decoration: none; }
+  </style>
+  <script>
+    function marcarConcluido(btn) {
+      btn.classList.toggle("done");
+      btn.textContent = btn.classList.contains("done") ? "Concluído" : "Marcar como concluído";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Cronograma Intensivo — Gestão de TI</h1>
+    <p>Resumo de 2 anos e meio em 3 meses</p>
+  </header>
+
+  <section>
+    <h2>Mês 1 — Fundamentos Técnicos</h2>
+    <ul>
+      <li><strong>Semana 1:</strong> Fundamentos de TI + Lógica de Programação — <a href="https://www.beecrowd.com.br" target="_blank">Beecrowd</a> <button onclick="marcarConcluido(this)">Marcar como concluído</button></li>
+      <li><strong>Semana 2:</strong> Redes + Sistemas Operacionais — <a href="https://www.cisco.com/c/en/us/training-events/training-certifications/training.html" target="_blank">Cisco Training</a> <button onclick="marcarConcluido(this)">Marcar como concluído</button></li>
+      <li><strong>Semana 3:</strong> Banco de Dados + SQL — <a href="https://sqlzoo.net/" target="_blank">SQLZoo</a> <button onclick="marcarConcluido(this)">Marcar como concluído</button></li>
+      <li><strong>Semana 4:</strong> POO + Web — <a href="https://developer.mozilla.org/pt-BR/docs/Web" target="_blank">MDN Web Docs</a> <button onclick="marcarConcluido(this)">Marcar como concluído</button></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Mês 2 — Gestão e Estratégia</h2>
+    <ul>
+      <li><strong>Semana 5:</strong> Segurança + Cloud — <a href="https://aws.amazon.com/pt/training/" target="_blank">AWS Training</a> <button onclick="marcarConcluido(this)">Marcar como concluído</button></li>
+      <li><strong>Semana 6:</strong> Governança de TI — <a href="https://www.isaca.org/resources/cobit" target="_blank">COBIT by ISACA</a> <button onclick="marcarConcluido(this)">Marcar como concluído</button></li>
+      <li><strong>Semana 7:</strong> Gestão de Projetos — <a href="https://www.scrumstudy.com/" target="_blank">ScrumStudy</a> <button onclick="marcarConcluido(this)">Marcar como concluído</button></li>
+      <li><strong>Semana 8:</strong> Análise de Sistemas — <a href="https://www.lucidchart.com/pages/pt/uml-diagram" target="_blank">Lucidchart UML</a> <button onclick="marcarConcluido(this)">Marcar como concluído</button></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Mês 3 — Mercado e Soft Skills</h2>
+    <ul>
+      <li><strong>Semana 9:</strong> BI + Big Data — <a href="https://learn.microsoft.com/pt-br/power-bi/" target="_blank">Power BI Docs</a> <button onclick="marcarConcluido(this)">Marcar como concluído</button></li>
+      <li><strong>Semana 10:</strong> Empreendedorismo — <a href="https://www.sebrae.com.br/sites/PortalSebrae/cursosonline" target="_blank">Cursos Sebrae</a> <button onclick="marcarConcluido(this)">Marcar como concluído</button></li>
+      <li><strong>Semana 11:</strong> Soft Skills — <a href="https://www.coursera.org/learn/comunicacao-eficaz" target="_blank">Comunicação Eficaz (Coursera)</a> <button onclick="marcarConcluido(this)">Marcar como concluído</button></li>
+      <li><strong>Semana 12:</strong> Revisão + Mercado — <a href="https://www.linkedin.com/learning/" target="_blank">LinkedIn Learning</a> <button onclick="marcarConcluido(this)">Marcar como concluído</button></li>
+    </ul>
+  </section>
+</body>
+</html>
+`
+
+---
